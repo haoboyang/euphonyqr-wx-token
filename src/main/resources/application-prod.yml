@@ -1,0 +1,13 @@
+server:
+  port: 8133
+  servlet:
+    context-path: /soundboom
+
+QIESHU:
+  APPKEY: "8c27d7f85b5f4d4f8c012eb5d3d48df7" #箧书声波解析token公钥
+  SECKEY: "48fa3f9f11424400839aeefc37113853"  #箧书声波解析token秘钥
+  WXAPPID: "wx8d15c9424ceaf8c5"   #对应上面应用注册时wxId
+  PACKAGE_NAME: ""
+  BOUND_ID: ""
+  SANDBOX: false   #用户调试开关， false  用于正式环境
+  CHECKWXAPPID: false
