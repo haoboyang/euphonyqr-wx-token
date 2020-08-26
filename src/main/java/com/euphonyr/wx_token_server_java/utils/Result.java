@@ -14,20 +14,20 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 public class Result {
 
-    private int code ;
+    private int code;
 
-    @JsonSerialize(include= JsonSerialize.Inclusion.NON_NULL)
-    private String token ;
+    @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+    private String token;
 
-    @JsonSerialize(include= JsonSerialize.Inclusion.NON_NULL)
+    @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
     private String message;
 
-    public Result( int code, String token ){
+    public Result(int code, String token) {
         this.code = code;
         this.token = token;
     }
 
-    public Result( int code, String message, String token) {
+    public Result(int code, String message, String token) {
         this.code = code;
         this.message = message;
         this.token = token;

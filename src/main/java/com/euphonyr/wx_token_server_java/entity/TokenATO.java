@@ -15,35 +15,35 @@ import org.springframework.stereotype.Component;
 @Component
 public class TokenATO {
 
-   public static String  appkey ;
+    public static String appkey;
 
-   public static String  seckey ;
+    public static String seckey;
 
-   public static String  token ;
+    public static String token;
 
-   public static String  wxAppID ;
+    public static String wxAppID;
 
-   public static String  packageName ;
+    public static String packageName;
 
-   public static String  boundId ;
+    public static String boundId;
 
-   public static boolean useSandbox ;
+    public static boolean useSandbox;
 
-   public static boolean checkWxAPPID ;
+    public static boolean checkWxAPPID;
 
-   public static String checkWxPrefix = "https://servicewechat.com/";
+    public static String checkWxPrefix = "https://servicewechat.com/";
 
     @Value("${QIESHU.APPKEY}")
-    public   void setAppkey(String appkey) {
-         TokenATO.appkey = appkey;
+    public void setAppkey(String appkey) {
+        TokenATO.appkey = appkey;
     }
 
     @Value("${QIESHU.SECKEY}")
-    public  void setSeckey(String seckey) {
-         TokenATO.seckey = seckey;
+    public void setSeckey(String seckey) {
+        TokenATO.seckey = seckey;
     }
 
-    public   void setToken(String token) {
+    public void setToken(String token) {
         TokenATO.token = token;
     }
 
@@ -69,11 +69,11 @@ public class TokenATO {
 
     @Value("${QIESHU.CHECKWXAPPID}")
     public void setCheckWxAPPID(boolean checkWxAPPID) {
-       TokenATO.checkWxAPPID = checkWxAPPID;
+        TokenATO.checkWxAPPID = checkWxAPPID;
     }
 
     @Value("${QIESHU.WXAPPID}")
-    public  void setCheckWxPrefix(String wxAppID) {
+    public void setCheckWxPrefix(String wxAppID) {
         TokenATO.checkWxPrefix = checkWxPrefix + wxAppID + "/";
     }
 }

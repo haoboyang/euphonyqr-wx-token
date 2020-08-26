@@ -11,49 +11,49 @@ package com.euphonyr.wx_token_server_java.utils;
 
 
 public class Detect {
-	private String[] tags;
-	private double power;
-	private int channel;
-	private double distance;
-	private double range;
+    private String[] tags;
+    private double power;
+    private int channel;
+    private double distance;
+    private double range;
 
-	public String[] getTags() {
-		return tags;
-	}
+    public String[] getTags() {
+        return tags;
+    }
 
-	public void setTags(String[] tags) {
-		this.tags = tags;
-	}
+    public void setTags(String[] tags) {
+        this.tags = tags;
+    }
 
-	public double getPower() {
-		return power;
-	}
+    public double getPower() {
+        return power;
+    }
 
-	public void setPower(double power) {
-		this.power = power;
-	}
+    public void setPower(double power) {
+        this.power = power;
+    }
 
-	public int getChannel() {
-		return channel;
-	}
+    public int getChannel() {
+        return channel;
+    }
 
-	public void setChannel(int channel) {
-		this.channel = channel;
-	}
+    public void setChannel(int channel) {
+        this.channel = channel;
+    }
 
-	public double getDistance() {
-		return distance;
-	}
+    public double getDistance() {
+        return distance;
+    }
 
-	public void setDistance(double distance) {
-		this.distance = distance;
-	}
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
 
-	public double getRange() {
-		return range;
-	}
+    public double getRange() {
+        return range;
+    }
 
-	public void setRange(double range) {
-		this.range = range;
-	}
+    public void setRange(double range) {
+        this.range = range;
+    }
 }

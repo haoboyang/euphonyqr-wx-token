@@ -51,7 +51,7 @@ public class TokenServiceImpl implements TokenService {
         String url = RES_URL + "?nocache=" + random.nextInt() + "&appkey=" +
                 TokenATO.appkey + "&seckey=" + TokenATO.seckey + "&test=" + TokenATO.useSandbox;
 
-        ResponseEntity<QSTokenVO> responseEntity = restTemplate.getForEntity(url,  QSTokenVO.class);
+        ResponseEntity<QSTokenVO> responseEntity = restTemplate.getForEntity(url, QSTokenVO.class);
 
         if (responseEntity.getStatusCode() == HttpStatus.OK) {
             QSTokenVO result = responseEntity.getBody();
@@ -81,7 +81,6 @@ public class TokenServiceImpl implements TokenService {
                 }
             }
         }
-
 
 
         return true;
@@ -121,7 +120,7 @@ public class TokenServiceImpl implements TokenService {
     }
 
     public EuphonyQRDetectRequestParam makeQueryData(String appkey, String platform, String device_id, String refer,
-            String ip, String UA) {
+                                                     String ip, String UA) {
         String packageName = TokenATO.wxAppID;
         if (platform == null || platform.equals("")) {
             platform = "wx_app";
@@ -131,7 +130,7 @@ public class TokenServiceImpl implements TokenService {
             case "ios":
                 packageName = TokenATO.packageName;
                 break;
-            case "android":
+            case "Android":
                 packageName = TokenATO.boundId;
                 break;
             default:
